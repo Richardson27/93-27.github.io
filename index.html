@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Trinity BAKOYEME et Richardson FILDOR" />
+
+
+<title>Etude sur la gentrification : le cas de Saint-Ouen-sur-Seine</title>
+
+<script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #204a87; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="script1.html">Script 1</a>
+</li>
+<li>
+  <a href="beatrice.html">Beatrice</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/beababa/01_stat">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Etude sur la gentrification : le cas de
+Saint-Ouen-sur-Seine</h1>
+<h4 class="author">Trinity BAKOYEME et Richardson FILDOR</h4>
+<h4 class="date">Mai 2026</h4>
+
+</div>
+
+
+<div id="objet" class="section level1">
+<h1>Objet</h1>
+<p>L’arrivée de la ligne 14 à Saint-Ouen a justifié la construction et
+le développement de l’écoquartier des Docks de Saint-Ouen. Ancienne
+friche industrielle située au nord-ouest de la ville, la Zone
+d’Aménagement Concerté (ZAC) des Docks se présente comme un quartier
+multifonctionnel alliant dimensions résidentielle, écologique et
+culturelle. Il abrite notamment le siège social de la région
+Île-de-France, celui d’Alstom, la halle gourmande « La Communale » ainsi
+que le Grand Parc des Docks.</p>
+<p>Ce quartier regroupe d’innombrables activités qui le structurent.
+Toutefois, un enjeu majeur fracture désormais les Docks et les quartiers
+avoisinants : la gentrification. Ce phénomène marque une rupture entre
+les Audoniens installés de longue date et les nouveaux arrivants issus
+des classes aisées.</p>
+<p>À travers cette étude, nous expliquerons les différentes causes de la
+gentrification liées à l’extension des transports (la ligne 14) et à
+l’augmentation constante des prix de l’immobilier. Cela nous permettra
+de mettre en lumière les disparités de revenus selon les quartiers de la
+ville de Saint-Ouen.</p>
+<p>Pour illustrer ce processus, nous avons choisi d’utiliser le revenu
+médian par ménage ainsi que les types de logements. Le revenu médian est
+le montant qui divise une population en deux groupes égaux : la moitié
+percevant un revenu supérieur et l’autre moitié un revenu inférieur. Il
+constitue un indicateur clé pour analyser les écarts de niveau de vie à
+l’échelle locale.</p>
+<p>C’es pourquoi on va se demander à partir des études cartographique,
+en quoi la gentrification a-t-elle transformé les dynamiques
+socio-spatiales dans la ville de Saint-Ouen ?</p>
+<hr />
+</div>
+<div id="librairies" class="section level1">
+<h1>Librairies</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code></pre></div>
+<pre><code>## Linking to GEOS 3.14.1, GDAL 3.12.1, PROJ 9.7.1; sf_use_s2() is TRUE</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">library</span>(mapsf)</span></code></pre></div>
+</div>
+<div id="données" class="section level1">
+<h1>Données</h1>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">st_layers</span>(<span class="st">&quot;base.gpkg&quot;</span>)</span></code></pre></div>
+<pre><code>## Driver: GPKG 
+## Available layers:
+##           layer_name geometry_type features fields              crs_name
+## 1            batourq Multi Polygon       42      2 RGF93 v1 / Lambert-93
+## 2   carreau_manquant                     42      2 RGF93 v1 / Lambert-93
+## 3 carreau_manquant97       Polygon      115      2 RGAF09 / UTM zone 20N
+## 4            commune       Polygon       43      3 RGF93 v1 / Lambert-93
+## 5                car Multi Polygon    43259     38 RGF93 v1 / Lambert-93
+## 6              car97 Multi Polygon     1383     37 RGAF09 / UTM zone 20N
+## 7            carreau                   1063     41 RGF93 v1 / Lambert-93</code></pre>
+<p>commune et carreau</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>saintouensurseine <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">&quot;base.gpkg&quot;</span>, <span class="st">&quot;commune&quot;</span>)</span></code></pre></div>
+<pre><code>## Reading layer `commune&#39; from data source 
+##   `C:\Users\pc\Documents\modeleProjet-main\base.gpkg&#39; using driver `GPKG&#39;
+## Simple feature collection with 43 features and 3 fields
+## Geometry type: POLYGON
+## Dimension:     XY
+## Bounding box:  xmin: -6381955 ymin: 5931071 xmax: 1017228 ymax: 7023834
+## Projected CRS: RGF93 v1 / Lambert-93</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>saintouensurseine <span class="ot">&lt;-</span> saintouensurseine [saintouensurseine<span class="sc">$</span>code <span class="sc">==</span> <span class="dv">93070</span>,]</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>car <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">&quot;base.gpkg&quot;</span>, <span class="st">&quot;car&quot;</span>)</span></code></pre></div>
+<pre><code>## Reading layer `car&#39; from data source 
+##   `C:\Users\pc\Documents\modeleProjet-main\base.gpkg&#39; using driver `GPKG&#39;
+## Simple feature collection with 43259 features and 38 fields
+## Geometry type: MULTIPOLYGON
+## Dimension:     XY
+## Bounding box:  xmin: 329741 ymin: 6262556 xmax: 1008859 ymax: 7023831
+## Projected CRS: RGF93 v1 / Lambert-93</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>car <span class="ot">&lt;-</span> car [car<span class="sc">$</span>lcog_geo <span class="sc">==</span> <span class="dv">93070</span>,]</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>données <span class="ot">&lt;-</span> <span class="fu">read.csv2</span>(<span class="st">&quot;Classeur1.csv&quot;</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(données)</span></code></pre></div>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th
+align="left">Nom.Echelle.Projection.Producteur..Date.Nombre.d.objets..Format..Poids.Lien</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Carreau Filosofi,Communale ,Lambert
+93,INSEE,Deux-mille-dix-huit,61,gpkg,21,8 Mo,<a
+href="https://www.insee.fr/fr/outil-interactif/7737357/map.html"
+class="uri">https://www.insee.fr/fr/outil-interactif/7737357/map.html</a></td>
+</tr>
+<tr class="even">
+<td align="left">Carreau Manquant ,Communale ,Lambert
+93,INSEE,Deux-mille-vingt-et-un,,gpkg,244 ko,<a
+href="https://www.insee.fr/fr/outil-interactif/7737357/map.html"
+class="uri">https://www.insee.fr/fr/outil-interactif/7737357/map.html</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Contour de Saint-Ouen ,Communale ,Lambert
+93,INSEE,Deux-mille-vingt-et-un,1,json,244 ko,<a
+href="https://cadastre.data.gouv.fr/datasets/cadastre-etalab"
+class="uri">https://cadastre.data.gouv.fr/datasets/cadastre-etalab</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="cartographie-de-saint-ouen-sur-seine-occupation-du-sol"
+class="section level1">
+<h1>Cartographie de Saint-Ouen-sur-Seine (occupation du sol)</h1>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">png</span>(<span class="st">&quot;carte.png&quot;</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">mf_map</span>(saintouensurseine)</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="fu">mf_map</span>(car, <span class="at">add =</span> T)</span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="fu">mf_layout</span>(<span class="st">&quot;Saint-Ouen-sur-Seine&quot;</span>, <span class="st">&quot;Mars 2026/nInsee&quot;</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<pre><code>## png 
+##   2</code></pre>
+<p><img src="carte.png" /></p>
+<p>Cette carte détaille l’occupation du sol à Saint-Ouen, mettant en
+évidence une concentration de l’habitat dans le centre ainsi qu’aux
+abords des limites communales. Les espaces grisés signalent les zones
+non résidentielles, occupées majoritairement par des secteurs
+industriels, des espaces verts tels que les parcs, ainsi que l’emprise
+importante du cimetière parisien de Saint-Ouen. Cette répartition
+souligne le découpage fonctionnel de la ville, où les zones de vie
+côtoient de vastes pôles d’activités et de services.</p>
+<hr />
+</div>
+<div id="cartographie-des-carreaux-manquants-à-saint-ouen-sur-seine"
+class="section level1">
+<h1>Cartographie des carreaux manquants à Saint-Ouen-sur-Seine</h1>
+</div>
+<div id="cartographie-raster" class="section level1">
+<h1>Cartographie raster</h1>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a>inter <span class="ot">&lt;-</span> <span class="fu">st_union</span>(<span class="fu">st_intersection</span>(saintouensurseine,car))</span></code></pre></div>
+<pre><code>## Warning: attribute variables are assumed to be spatially constant throughout
+## all geometries</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>diff <span class="ot">&lt;-</span> <span class="fu">st_difference</span>(saintouensurseine<span class="sc">$</span>geom, inter)</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="fu">library</span>(mapsf)</span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a><span class="fu">mf_map</span>(diff)</span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a><span class="fu">mf_map</span>(saintouensurseine, <span class="at">add =</span> T, <span class="at">col =</span> <span class="cn">NA</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a><span class="fu">mf_layout</span>(<span class="st">&quot;Carreaux manquants à Saint-Ouen-sur-Seine&quot;</span>,<span class="st">&quot;Filosofi 2019/nIGN 2026&quot;</span>)</span></code></pre></div>
+<p><img src="script1_files/figure-html/unnamed-chunk-6-1.png" alt="" width="672" /></p>
+<p>L’absence de données sur certains carreaux du carroyage Filosofi à
+Saint-Ouen s’explique directement par la nature de l’occupation du sol
+dans ces secteurs. En effet, le secret statistique et la méthodologie de
+l’Insee ne permettent d’afficher des données socio-économiques que là où
+la densité de population est suffisante. Par conséquent, les vastes
+zones grises identifiées précédemment — regroupant les infrastructures
+industrielles, les parcs et l’importante emprise foncière du cimetière
+parisien de Saint-Ouen — apparaissent comme des « carreaux manquants ».
+Ces espaces, dédiés aux activités économiques ou aux fonctions urbaines
+spécifiques, constituent des ruptures dans le tissu résidentiel où aucun
+ménage n’est recensé, justifiant ainsi les vides observés sur la carte
+de densité.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">library</span>(imager)</span></code></pre></div>
+<pre><code>## Le chargement a nécessité le package : magrittr</code></pre>
+<pre><code>## 
+## Attachement du package : &#39;imager&#39;</code></pre>
+<pre><code>## L&#39;objet suivant est masqué depuis &#39;package:magrittr&#39;:
+## 
+##     add</code></pre>
+<pre><code>## Les objets suivants sont masqués depuis &#39;package:stats&#39;:
+## 
+##     convolve, spectrum</code></pre>
+<pre><code>## L&#39;objet suivant est masqué depuis &#39;package:graphics&#39;:
+## 
+##     frame</code></pre>
+<pre><code>## L&#39;objet suivant est masqué depuis &#39;package:base&#39;:
+## 
+##     save.image</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a>image <span class="ot">&lt;-</span> <span class="fu">load.image</span>(<span class="st">&quot;raster-schema.png&quot;</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a><span class="fu">plot</span>(image, <span class="at">axes =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<p><img src="script1_files/figure-html/unnamed-chunk-7-1.png" alt="" width="672" /></p>
+<hr />
+</div>
+<div
+id="cartographie-de-saint-ouen-sur-seine-avec-délimitation-de-la-ville-et-de-ses-carreaux"
+class="section level1">
+<h1>Cartographie de Saint-Ouen-sur-Seine (avec délimitation de la ville
+et de ses carreaux)</h1>
+</div>
+<div id="cartographie-vecteur" class="section level1">
+<h1>Cartographie vecteur</h1>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="co"># lecture des données</span></span>
+<span id="cb25-2"><a href="#cb25-2" tabindex="-1"></a>saintouensurseine <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">&quot;base.gpkg&quot;</span>, <span class="st">&quot;commune&quot;</span>, <span class="at">quiet =</span> T)</span>
+<span id="cb25-3"><a href="#cb25-3" tabindex="-1"></a>saintouensurseine <span class="ot">&lt;-</span> saintouensurseine [saintouensurseine<span class="sc">$</span>code <span class="sc">==</span> <span class="dv">93070</span>,]</span>
+<span id="cb25-4"><a href="#cb25-4" tabindex="-1"></a>car <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">&quot;base.gpkg&quot;</span>, <span class="st">&quot;car&quot;</span>,  <span class="at">quiet =</span> T) </span>
+<span id="cb25-5"><a href="#cb25-5" tabindex="-1"></a><span class="co"># intersection</span></span>
+<span id="cb25-6"><a href="#cb25-6" tabindex="-1"></a>inter <span class="ot">&lt;-</span> <span class="fu">st_intersection</span>(car, saintouensurseine)</span></code></pre></div>
+<pre><code>## Warning: attribute variables are assumed to be spatially constant throughout
+## all geometries</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a><span class="fu">st_write</span>(inter, <span class="st">&quot;base.gpkg&quot;</span>, <span class="st">&quot;carreau&quot;</span>, <span class="at">delete_layer =</span> T,  <span class="at">quiet =</span> T)</span>
+<span id="cb27-2"><a href="#cb27-2" tabindex="-1"></a>inter <span class="ot">&lt;-</span> <span class="fu">st_collection_extract</span>(inter, <span class="st">&quot;POLYGON&quot;</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" tabindex="-1"></a><span class="co"># carto</span></span>
+<span id="cb27-4"><a href="#cb27-4" tabindex="-1"></a><span class="fu">library</span>(mapsf)</span>
+<span id="cb27-5"><a href="#cb27-5" tabindex="-1"></a><span class="fu">mf_map</span>(inter, <span class="at">col =</span> <span class="cn">NA</span>, <span class="at">border =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb27-6"><a href="#cb27-6" tabindex="-1"></a><span class="fu">mf_layout</span>(<span class="st">&quot;Découpage carreaux à Saint-Ouen-sur-Seine&quot;</span>, <span class="st">&quot;insee 2021/nOSM&quot;</span>)</span></code></pre></div>
+<p><img src="script1_files/figure-html/unnamed-chunk-8-1.png" alt="" width="672" /></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="fu">library</span>(imager)</span>
+<span id="cb28-2"><a href="#cb28-2" tabindex="-1"></a>image <span class="ot">&lt;-</span> <span class="fu">load.image</span>(<span class="st">&quot;vecteur-schema.png&quot;</span>)</span>
+<span id="cb28-3"><a href="#cb28-3" tabindex="-1"></a><span class="fu">plot</span>(image, <span class="at">axes =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<p><img src="script1_files/figure-html/unnamed-chunk-9-1.png" alt="" width="672" /></p>
+<hr />
+</div>
+<div id="histogramme-des-ménages-à-bas-revenus-à-saint-ouen"
+class="section level1">
+<h1>Histogramme des ménages à bas revenus à Saint-Ouen</h1>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a>car_complet <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">&quot;base.gpkg&quot;</span>, <span class="st">&quot;car&quot;</span>, <span class="at">quiet =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" tabindex="-1"></a>car_saintouen <span class="ot">&lt;-</span> car_complet[car_complet<span class="sc">$</span>lcog_geo <span class="sc">==</span> <span class="st">&quot;93070&quot;</span>, <span class="st">&quot;men_pauv&quot;</span>]</span>
+<span id="cb29-4"><a href="#cb29-4" tabindex="-1"></a><span class="fu">st_write</span>(car_saintouen, <span class="st">&quot;data/saintouen.gpkg&quot;</span>, <span class="st">&quot;car&quot;</span>, <span class="at">quiet =</span> T, <span class="at">delete_dsn =</span> T)</span>
+<span id="cb29-5"><a href="#cb29-5" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" tabindex="-1"></a>car_res_saintouen <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">&quot;data/saintouen.gpkg&quot;</span>, <span class="st">&quot;car&quot;</span>, <span class="at">quiet =</span> T)</span>
+<span id="cb29-7"><a href="#cb29-7" tabindex="-1"></a><span class="fu">hist</span>(car_res_saintouen<span class="sc">$</span>men_pauv, <span class="at">main =</span> <span class="st">&quot;Saint-Ouen-sur-Seine&quot;</span>, <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<p><img src="script1_files/figure-html/unnamed-chunk-10-1.png" alt="" width="672" /></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a><span class="fu">summary</span>(car_res_saintouen<span class="sc">$</span>men_pauv)</span></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    0.30   23.00   49.00   59.01   82.00  214.00</code></pre>
+<p>L’histogramme des ménages à bas revenus confirme que la
+gentrification de Saint-Ouen n’est pas uniforme, mais localisée
+géographiquement. L’émergence d’un pic de carreaux comptant une très
+faible proportion de ménages précaires témoigne de l’apparition de
+nouveaux pôles d’attractivité, notamment dans le quartier des Docks. Ce
+phénomène crée un contraste saisissant avec les secteurs historiques de
+la ville, où la précarité demeure fortement concentrée, soulignant ainsi
+une fragmentation sociale persistante au sein du territoire
+audonien.</p>
+<hr />
+</div>
+<div
+id="densité-des-ménages-pauvres-à-saint-ouen-sur-seine-expliquant-le-phénomène-de-la-gentrification-de-la-ville."
+class="section level1">
+<h1>Densité des ménages pauvres à Saint-Ouen-sur-Seine, expliquant le
+phénomène de la gentrification de la ville.</h1>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" tabindex="-1"></a>q_saintouen <span class="ot">&lt;-</span> <span class="fu">quantile</span>(car_res_saintouen<span class="sc">$</span>men_pauv, <span class="at">na.rm =</span> T)</span>
+<span id="cb32-2"><a href="#cb32-2" tabindex="-1"></a>car_res_saintouen<span class="sc">$</span>men_pauv_rapport <span class="ot">&lt;-</span> <span class="st">&quot;moyen&quot;</span></span>
+<span id="cb32-3"><a href="#cb32-3" tabindex="-1"></a>car_res_saintouen<span class="sc">$</span>men_pauv_rapport [car_res_saintouen<span class="sc">$</span>men_pauv <span class="sc">&lt;</span> q_saintouen[<span class="dv">2</span>]] <span class="ot">&lt;-</span> <span class="st">&quot;Moins de ménages pauvres&quot;</span></span>
+<span id="cb32-4"><a href="#cb32-4" tabindex="-1"></a>car_res_saintouen<span class="sc">$</span>men_pauv_rapport [car_res_saintouen<span class="sc">$</span>men_pauv <span class="sc">&gt;</span> q_saintouen[<span class="dv">3</span>]] <span class="ot">&lt;-</span> <span class="st">&quot;Plus de ménages pauvres&quot;</span></span>
+<span id="cb32-5"><a href="#cb32-5" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" tabindex="-1"></a><span class="fu">mf_map</span>(car_res_saintouen, <span class="at">type =</span> <span class="st">&quot;typo&quot;</span>, <span class="at">var =</span> <span class="st">&quot;men_pauv_rapport&quot;</span>,</span>
+<span id="cb32-7"><a href="#cb32-7" tabindex="-1"></a>       <span class="at">border =</span> <span class="cn">NA</span>, <span class="at">leg_title =</span> <span class="st">&quot;Niveau&quot;</span>,</span>
+<span id="cb32-8"><a href="#cb32-8" tabindex="-1"></a>       <span class="at">pal =</span> <span class="fu">c</span>(<span class="st">&quot;lightgreen&quot;</span>, <span class="st">&quot;orange&quot;</span>, <span class="st">&quot;red&quot;</span>))</span>
+<span id="cb32-9"><a href="#cb32-9" tabindex="-1"></a><span class="fu">mf_layout</span>(<span class="st">&quot;Densité des ménages pauvres à Saint-Ouen-sur-Seine&quot;</span>)</span></code></pre></div>
+<p><img src="script1_files/figure-html/unnamed-chunk-11-1.png" alt="" width="672" /></p>
+<p>Cette carte illustre la répartition socio-économique de la commune
+selon trois catégories : les ménages aisés (en vert), la classe moyenne
+(en orange) et les foyers les plus précaires (en rouge). L’analyse
+révèle un contraste spatial marqué : alors que le sud et le centre de la
+ville se caractérisent par une forte concentration de populations
+modestes, les classes aisées s’installent préférentiellement en
+périphérie, notamment dans le quartier des Docks de Saint-Ouen. Cette
+segmentation géographique souligne une dualité nette entre un noyau
+urbain plus vulnérable et des zones périphériques en cours de
+valorisation économique.</p>
+<hr />
+</div>
+<div
+id="mnh-indiquant-la-hauteur-du-bati-et-la-concentration-des-habitations-dans-le-quartier-des-docks-de-saint-ouen-sur-seine."
+class="section level1">
+<h1>MNH indiquant la hauteur du bati et la concentration des habitations
+dans le quartier des Docks de Saint-Ouen-sur-Seine.</h1>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a><span class="fu">library</span>(terra)</span></code></pre></div>
+<pre><code>## terra 1.9.27</code></pre>
+<pre><code>## 
+## Attachement du package : &#39;terra&#39;</code></pre>
+<pre><code>## Les objets suivants sont masqués depuis &#39;package:imager&#39;:
+## 
+##     depth, watershed, width</code></pre>
+<pre><code>## Les objets suivants sont masqués depuis &#39;package:magrittr&#39;:
+## 
+##     extract, inset</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a><span class="co"># 1. Fonction de chargement optimisée</span></span>
+<span id="cb38-2"><a href="#cb38-2" tabindex="-1"></a>charger_fichiers <span class="ot">&lt;-</span> <span class="cf">function</span>(dossier) {</span>
+<span id="cb38-3"><a href="#cb38-3" tabindex="-1"></a>  fichiers <span class="ot">&lt;-</span> <span class="fu">list.files</span>(dossier, <span class="at">pattern =</span> <span class="st">&quot;</span><span class="sc">\\</span><span class="st">.tif$&quot;</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb38-4"><a href="#cb38-4" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(fichiers) <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">stop</span>(<span class="fu">paste</span>(<span class="st">&quot;Aucun fichier .tif trouvé dans&quot;</span>, dossier))</span>
+<span id="cb38-5"><a href="#cb38-5" tabindex="-1"></a>  </span>
+<span id="cb38-6"><a href="#cb38-6" tabindex="-1"></a>  <span class="co"># Utilisation de sprst (SpatRasterDataset) pour une fusion efficace</span></span>
+<span id="cb38-7"><a href="#cb38-7" tabindex="-1"></a>  liste_rasters <span class="ot">&lt;-</span> <span class="fu">lapply</span>(fichiers, rast)</span>
+<span id="cb38-8"><a href="#cb38-8" tabindex="-1"></a>  sprst <span class="ot">&lt;-</span> <span class="fu">sprc</span>(liste_rasters)</span>
+<span id="cb38-9"><a href="#cb38-9" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">merge</span>(sprst)) </span>
+<span id="cb38-10"><a href="#cb38-10" tabindex="-1"></a>}</span>
+<span id="cb38-11"><a href="#cb38-11" tabindex="-1"></a></span>
+<span id="cb38-12"><a href="#cb38-12" tabindex="-1"></a><span class="co"># 2. Chemins (Vérifiez bien les slashs &quot;/&quot; sous Windows)</span></span>
+<span id="cb38-13"><a href="#cb38-13" tabindex="-1"></a>path_mnt_sto <span class="ot">&lt;-</span> <span class="st">&quot;C:/Users/pc/Documents/modeleProjet-main/MNT&quot;</span></span>
+<span id="cb38-14"><a href="#cb38-14" tabindex="-1"></a>path_mns_sto <span class="ot">&lt;-</span> <span class="st">&quot;C:/Users/pc/Documents/modeleProjet-main/MNS&quot;</span></span>
+<span id="cb38-15"><a href="#cb38-15" tabindex="-1"></a></span>
+<span id="cb38-16"><a href="#cb38-16" tabindex="-1"></a><span class="co"># 3. Importation</span></span>
+<span id="cb38-17"><a href="#cb38-17" tabindex="-1"></a>mnt_sto <span class="ot">&lt;-</span> <span class="fu">charger_fichiers</span>(path_mnt_sto)</span>
+<span id="cb38-18"><a href="#cb38-18" tabindex="-1"></a>mns_sto <span class="ot">&lt;-</span> <span class="fu">charger_fichiers</span>(path_mns_sto)</span>
+<span id="cb38-19"><a href="#cb38-19" tabindex="-1"></a></span>
+<span id="cb38-20"><a href="#cb38-20" tabindex="-1"></a><span class="co"># 4. Calcul du MNH (Modèle Numérique de Hauteur)</span></span>
+<span id="cb38-21"><a href="#cb38-21" tabindex="-1"></a><span class="co"># On s&#39;assure que les deux rasters ont la même emprise/résolution</span></span>
+<span id="cb38-22"><a href="#cb38-22" tabindex="-1"></a>mnh_sto <span class="ot">&lt;-</span> mns_sto <span class="sc">-</span> mnt_sto</span>
+<span id="cb38-23"><a href="#cb38-23" tabindex="-1"></a>mnh_sto[mnh_sto <span class="sc">&lt;</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb38-24"><a href="#cb38-24" tabindex="-1"></a></span>
+<span id="cb38-25"><a href="#cb38-25" tabindex="-1"></a><span class="co"># 5. Affichage optimisé</span></span>
+<span id="cb38-26"><a href="#cb38-26" tabindex="-1"></a><span class="co"># &#39;mar&#39; permet de réduire les marges blanches autour de la carte</span></span>
+<span id="cb38-27"><a href="#cb38-27" tabindex="-1"></a><span class="co"># 1. On définit une emprise réaliste pour les hauteurs (0 à 50m pour Saint-Ouen)</span></span>
+<span id="cb38-28"><a href="#cb38-28" tabindex="-1"></a><span class="co"># Cela évite que les grues ou erreurs ne faussent les couleurs.</span></span>
+<span id="cb38-29"><a href="#cb38-29" tabindex="-1"></a>terra<span class="sc">::</span><span class="fu">plot</span>(mnh_sto, </span>
+<span id="cb38-30"><a href="#cb38-30" tabindex="-1"></a>            <span class="at">col =</span> <span class="fu">map.pal</span>(<span class="st">&quot;magma&quot;</span>, <span class="dv">100</span>), </span>
+<span id="cb38-31"><a href="#cb38-31" tabindex="-1"></a>            <span class="at">range =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">45</span>),            <span class="co"># On &quot;bloque&quot; le maximum à 45m</span></span>
+<span id="cb38-32"><a href="#cb38-32" tabindex="-1"></a>            <span class="at">main =</span> <span class="st">&quot;Hauteur des bâtiments à Saint-Ouen&quot;</span>,</span>
+<span id="cb38-33"><a href="#cb38-33" tabindex="-1"></a>            <span class="at">plg =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">&quot;Mètres&quot;</span>), <span class="co"># Titre de la légende</span></span>
+<span id="cb38-34"><a href="#cb38-34" tabindex="-1"></a>            <span class="at">pax =</span> <span class="fu">list</span>(<span class="at">side =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>),      <span class="co"># Garde les axes mais les rend discrets</span></span>
+<span id="cb38-35"><a href="#cb38-35" tabindex="-1"></a>            <span class="at">background =</span> <span class="st">&quot;black&quot;</span>)        <span class="co"># Fond noir pour faire ressortir le bâti</span></span></code></pre></div>
+<p><img src="script1_files/figure-html/unnamed-chunk-12-1.png" alt="" width="672" /></p>
+<p>Avec la gentrification, le quartier des Docks est devenu le quartier
+le plus habité de Saint-Ouen-sur-Seine. En effet, l’analyse de l’image
+ci dessus permet de visualiser spatialement la gentrification du
+quartier des Docks à travers sa morphologie urbaine : les zones de bâti
+aux couleurs claires (jaune et crème), culminant entre 30 et 40 mètres,
+tranchent radicalement avec les teintes sombres (violet et noir) du
+tissu historique plus bas. Cette verticalité soudaine, visible par ces
+blocs géométriques massifs en haut de la carte, matérialise physiquement
+les grands projets d’aménagement contemporains qui ont remplacé les
+anciennes friches industrielles par des résidences de standing et des
+bureaux modernes. Ainsi, la carte ne se contente pas d’afficher des
+altitudes, elle cartographie une rupture sociologique où la hauteur des
+bâtiments devient le marqueur géographique d’une nouvelle strate de
+population et d’un renouveau économique propre au processus de
+gentrification. C’est ainsi qu’on peut dire que la gentrification
+transforme le visage de Saint-Ouen-sur-Seine avec cette fracture entre
+la partie historique qui possède des hauteurs assez faibles et le
+quartier des Docks qui concentrent des bâtiments dépassant les 25
+mètres.</p>
+<hr />
+</div>
+<div id="conclusion" class="section level1">
+<h1>CONCLUSION</h1>
+<p>Pour conclure, notre étude montre que la gentrification transforme la
+commune de Saint-Ouen-sur-Seine. On observe que les logements neufs et
+plus chers attirent des familles aux revenus élevés, surtout dans
+certains quartiers. À l’inverse, le centre-sud de la commune reste
+marqué par des logements plus anciens et des ménages plus modestes.</p>
+<p>L’arrivée de la ligne 14 du métro a joué un rôle important dans cette
+transformation, car elle a augmenté l’attractivité de la ville et
+entraîné une hausse des prix et des loyers. Petit à petit, les
+populations les plus précaires sont poussées vers des communes plus
+éloignées. Ces nouveaux quartiers attirent surtout des familles venant
+de Paris, qui cherchent des logements moins chers tout en restant
+proches de la capitale. Cela correspond aussi au projet du Grand Paris,
+qui vise à agrandir l’espace de la capitale face à la crise du
+logement.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
